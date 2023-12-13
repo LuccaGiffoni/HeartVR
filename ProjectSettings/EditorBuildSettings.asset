@@ -6,11 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Autohand_SplitModels.unity
+    guid: a58e3a3b7a6699f4596242049ee2cb52
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9103d9d4911bd1a48b361277d8bfa6d7,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 13203a0d36c236c4ba496bdfca250c36,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 23ef7f71bc525df4a909f7013c30f9de,
       type: 2}
   m_UseUCBPForAssetBundles: 0
