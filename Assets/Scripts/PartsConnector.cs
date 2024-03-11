@@ -33,10 +33,6 @@ public class PartsConnector : MonoBehaviour
             {
                 SnapToPosition();
             }
-            else
-            {
-                Debug.Log("Object is too far from the Anchor!");
-            }
         }
     }
 

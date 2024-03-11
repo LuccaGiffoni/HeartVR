@@ -38,6 +38,7 @@ public class PartsController : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -45,6 +46,7 @@ public class PartsController : MonoBehaviour
             AnimateHeart();
         }
     }
+#endif
 
     public void AnimateHeart()
     {
@@ -103,13 +105,12 @@ public class PartsController : MonoBehaviour
 
         while (elapsedTime < 1f)
         {
-            objTransform.position = Vector3.Lerp(currentStartPosition, targetPosition, elapsedTime);
-            objTransform.rotation = Quaternion.Lerp(currentStartRotation, targetRotation, elapsedTime);
+            objTransform.SetPositionAndRotation(Vector3.Lerp(currentStartPosition, targetPosition, elapsedTime), 
+                Quaternion.Lerp(currentStartRotation, targetRotation, elapsedTime));
             elapsedTime += Time.deltaTime * speed;
             yield return null;
         }
 
-        objTransform.position = targetPosition;
-        objTransform.rotation = targetRotation;
+        objTransform.SetPositionAndRotation(targetPosition, targetRotation);
     }
 }

@@ -362,8 +362,7 @@ PrefabInstance:
     - {fileID: 8592041278259744227, guid: c22829f0b457aad45a6b2c4295c35b65, type: 3}
     - {fileID: 4500261798024046190, guid: c22829f0b457aad45a6b2c4295c35b65, type: 3}
     - {fileID: 469570357655662501, guid: c22829f0b457aad45a6b2c4295c35b65, type: 3}
-    m_RemovedGameObjects:
-    - {fileID: 7346445409230735181, guid: c22829f0b457aad45a6b2c4295c35b65, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c22829f0b457aad45a6b2c4295c35b65, type: 3}
@@ -395,40 +394,12 @@ MonoBehaviour:
   positionSnapDistance: 0.5
   rotationSnapAngle: 20
   snapSource: {fileID: 173312584}
---- !u!54 &121233135 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 3323630363243440430, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &121233137 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4752732523145302465, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &125416001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3727688022284304385, guid: 45753d24446abeb47b7f5efc4c52daba,
     type: 3}
   m_PrefabInstance: {fileID: 536489356}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &127538258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 1944761100}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
 --- !u!1 &173312583
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,12 +534,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &263603233 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 302807359957465671, guid: c19a2d64274b96e46aa2fae15534447c,
-    type: 3}
-  m_PrefabInstance: {fileID: 587035764}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &278461594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 279956507}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -612,70 +577,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 279956507}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1021992085}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 279956507}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1021992085}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 350914916}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -684,74 +589,20 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 279956509}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 279956509}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!54 &279956507 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1506963934256675979, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &279956509 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2711312823385000366, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &347084266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1717208504917570484, guid: 45753d24446abeb47b7f5efc4c52daba,
     type: 3}
   m_PrefabInstance: {fileID: 536489356}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &350914916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 1021992084}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
 --- !u!4 &383719589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8140706371686193450, guid: c22829f0b457aad45a6b2c4295c35b65,
@@ -771,7 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 1728971233}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -801,70 +652,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1728971233}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1938436220}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1728971233}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1938436220}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_allowOcclusionWhenDynamic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 898255454}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -881,18 +672,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!54 &426462775 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1135329614430049249, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &426462777 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4836661079680107352, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &431888206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -974,12 +753,12 @@ PrefabInstance:
     - target: {fileID: 7381690624991247280, guid: 427ea5affd547e74bb017ea2ca7f2e89,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.092
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7381690624991247280, guid: 427ea5affd547e74bb017ea2ca7f2e89,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.354
+      value: -0.224
       objectReference: {fileID: 0}
     - target: {fileID: 7381690624991247280, guid: 427ea5affd547e74bb017ea2ca7f2e89,
         type: 3}
@@ -1106,11 +885,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1d3b02ac6a6ad624eb7c81898216585b, type: 2}
-    - target: {fileID: 561326497130816668, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.012
-      objectReference: {fileID: 0}
     - target: {fileID: 716786209090172110, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
       propertyPath: m_Enabled
@@ -1150,26 +924,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -90.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2280918416016668771, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.014
-      objectReference: {fileID: 0}
-    - target: {fileID: 2423553889997854628, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3135278741136252077, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.017
-      objectReference: {fileID: 0}
-    - target: {fileID: 3288706573487093362, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.011
       objectReference: {fileID: 0}
     - target: {fileID: 3453703129099500232, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
@@ -1246,11 +1000,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 21.9
       objectReference: {fileID: 0}
-    - target: {fileID: 4107119263415159757, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.010
-      objectReference: {fileID: 0}
     - target: {fileID: 4373585577795733583, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1301,16 +1050,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1d3b02ac6a6ad624eb7c81898216585b, type: 2}
-    - target: {fileID: 4784289619488379470, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.015
-      objectReference: {fileID: 0}
-    - target: {fileID: 4795238014649421636, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.001
-      objectReference: {fileID: 0}
     - target: {fileID: 5431510260162082312, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1340,16 +1079,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -132.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5671157009678939087, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.008
-      objectReference: {fileID: 0}
-    - target: {fileID: 5781584531571873946, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.016
       objectReference: {fileID: 0}
     - target: {fileID: 5839474399544510449, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
@@ -1451,11 +1180,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 6985693880267236895, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.007
-      objectReference: {fileID: 0}
     - target: {fileID: 7012487455046184295, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1501,21 +1225,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1d3b02ac6a6ad624eb7c81898216585b, type: 2}
-    - target: {fileID: 7710479802471689874, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.006
-      objectReference: {fileID: 0}
-    - target: {fileID: 7808081336889427056, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.004
-      objectReference: {fileID: 0}
-    - target: {fileID: 8329712010727632424, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.005
-      objectReference: {fileID: 0}
     - target: {fileID: 8951687799083980929, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
       propertyPath: m_Enabled
@@ -1526,11 +1235,6 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 1d3b02ac6a6ad624eb7c81898216585b, type: 2}
-    - target: {fileID: 8976716166298611067, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.009
-      objectReference: {fileID: 0}
     - target: {fileID: 9059253444001356127, guid: 45753d24446abeb47b7f5efc4c52daba,
         type: 3}
       propertyPath: m_Enabled
@@ -1555,11 +1259,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -120.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190500011673831038, guid: 45753d24446abeb47b7f5efc4c52daba,
-        type: 3}
-      propertyPath: m_Name
-      value: Fraction.003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1596,6 +1295,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 536489356}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &536489362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3564413204063382785, guid: 45753d24446abeb47b7f5efc4c52daba,
+    type: 3}
+  m_PrefabInstance: {fileID: 536489356}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &536489363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1713323981004087098, guid: 45753d24446abeb47b7f5efc4c52daba,
@@ -1615,7 +1320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 1824485242}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -1645,70 +1350,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1824485242}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1824485244}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1824485242}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1917132245}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1824485246}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -1874,115 +1519,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!1001 &587035764
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 302807359957465670, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 302807360439261628, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 626672760788952484, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456155113860667390, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4669664200092787143, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      propertyPath: m_Name
-      value: SmallRoomEnvironment
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 302807359957465671, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 438273843}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1969387359558922146, guid: c19a2d64274b96e46aa2fae15534447c,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 587035766}
-  m_SourcePrefab: {fileID: 100100000, guid: c19a2d64274b96e46aa2fae15534447c, type: 3}
---- !u!1 &587035765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1969387359558922146, guid: c19a2d64274b96e46aa2fae15534447c,
-    type: 3}
-  m_PrefabInstance: {fileID: 587035764}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &587035766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587035765}
+  m_GameObject: {fileID: 1969387360057170902}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
@@ -1999,18 +1542,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!54 &609743297 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 8979042339640096033, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &609743299 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2137595030819329603, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &642518383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8640869195427729640, guid: c22829f0b457aad45a6b2c4295c35b65,
@@ -2098,22 +1629,6 @@ Transform:
   - {fileID: 1196638047}
   m_Father: {fileID: 431888209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &824247535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 1458965137}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
 --- !u!114 &831028917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,7 +1642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 609743297}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -2157,70 +1672,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 609743297}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1944761101}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 609743297}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1944761101}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 127538258}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -2229,58 +1684,14 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 609743299}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 609743299}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!23 &834661884 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8071570139476970269, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &855934613 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1186855353748256218, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &855934615 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5539590092945869696, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &885926228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5860479801334596365, guid: 45753d24446abeb47b7f5efc4c52daba,
@@ -2320,6 +1731,7 @@ MonoBehaviour:
   heartMeshCollider: {fileID: 1785715063}
   heartParts:
   - {fileID: 1785715057}
+  - {fileID: 1785715056}
   - {fileID: 1785715055}
   - {fileID: 1785715054}
   - {fileID: 1785715053}
@@ -2336,6 +1748,7 @@ MonoBehaviour:
   - {fileID: 1785715042}
   fractionPositions:
   - {fileID: 536489363}
+  - {fileID: 536489362}
   - {fileID: 536489361}
   - {fileID: 536489360}
   - {fileID: 536489359}
@@ -2353,6 +1766,7 @@ MonoBehaviour:
   unitAnchorObject: {fileID: 18904555}
   anchorPositions:
   - {fileID: 925190517}
+  - {fileID: 1365338947}
   - {fileID: 1057072886}
   - {fileID: 1881315759}
   - {fileID: 1458965137}
@@ -2408,7 +1822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 1269634219}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -2438,70 +1852,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269634219}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 834661884}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269634219}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 834661884}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1322356058}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -2510,56 +1864,14 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269634221}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1269634221}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!114 &898255454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 642518383}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
 --- !u!4 &925190517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6023304279626993619, guid: c22829f0b457aad45a6b2c4295c35b65,
@@ -2569,12 +1881,6 @@ Transform:
 --- !u!23 &925190519 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7764176017488914977, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &956565601 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4734055946308702621, guid: c22829f0b457aad45a6b2c4295c35b65,
     type: 3}
   m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
@@ -2597,7 +1903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 121233135}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -2627,70 +1933,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 121233135}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1458965138}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 121233135}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1458965138}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 824247535}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -2699,36 +1945,10 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 121233137}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 121233137}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
@@ -2736,12 +1956,6 @@ MonoBehaviour:
 --- !u!4 &1021992084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1135793417066971454, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1021992085 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2107449387233727413, guid: c22829f0b457aad45a6b2c4295c35b65,
     type: 3}
   m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
@@ -2770,7 +1984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 855934613}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -2800,70 +2014,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 855934613}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1801971174}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 855934613}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1801971174}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1155965590}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -2872,36 +2026,10 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 855934615}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 855934615}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
@@ -3067,22 +2195,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!114 &1155965590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 1291869587}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
 --- !u!1 &1196638046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3114,40 +2226,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 818826851}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1269634219 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 2919376693990491262, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1269634221 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5232150249414430982, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1291869587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6018251972494091101, guid: c22829f0b457aad45a6b2c4295c35b65,
     type: 3}
   m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1322356058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &1365338947 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8441635408336469480, guid: c22829f0b457aad45a6b2c4295c35b65,
+    type: 3}
+  m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 383719589}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
 --- !u!4 &1365531132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5684885920059265880, guid: c22829f0b457aad45a6b2c4295c35b65,
@@ -3203,70 +2293,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 426462775}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1572740910}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 426462775}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1572740910}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1841386144}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -3275,36 +2305,10 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 426462777}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 426462777}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
@@ -3318,12 +2322,6 @@ Transform:
 --- !u!4 &1458965137 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4270932636718778066, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1458965138 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8749007144989805530, guid: c22829f0b457aad45a6b2c4295c35b65,
     type: 3}
   m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
@@ -3356,18 +2354,6 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 3149811593761421382, guid: 17fc73b0b7b32464f85c61b151a817f0,
     type: 3}
   m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1572740910 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8899371286727694659, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1591745534 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2735933774475946253, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1630169930 stripped
 Transform:
@@ -3407,28 +2393,6 @@ Transform:
   - {fileID: 2067078951}
   m_Father: {fileID: 431888208}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1711092072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 1881315759}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
---- !u!54 &1728971233 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 15832959314228851, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1785715040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3737,11 +2701,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5789217356404042958, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6265437456884132437, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       propertyPath: m_Enabled
@@ -3823,8 +2782,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 6731895755138800982, guid: 17fc73b0b7b32464f85c61b151a817f0, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2626769752130829087, guid: 17fc73b0b7b32464f85c61b151a817f0,
@@ -3847,6 +2805,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 47132526}
+    - targetCorrespondingSourceObject: {fileID: 6731895755138800982, guid: 17fc73b0b7b32464f85c61b151a817f0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1785715070}
     - targetCorrespondingSourceObject: {fileID: 235728664608525452, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
@@ -3859,50 +2821,26 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1785715060}
-    - targetCorrespondingSourceObject: {fileID: 1195053084342111874, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1711092072}
     - targetCorrespondingSourceObject: {fileID: 1105451298673468634, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1008127267}
-    - targetCorrespondingSourceObject: {fileID: 1105451298673468634, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 824247535}
     - targetCorrespondingSourceObject: {fileID: 1715711405123085408, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 278461594}
-    - targetCorrespondingSourceObject: {fileID: 1715711405123085408, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 350914916}
     - targetCorrespondingSourceObject: {fileID: 2034612710882569453, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1098257292}
-    - targetCorrespondingSourceObject: {fileID: 2034612710882569453, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1155965590}
     - targetCorrespondingSourceObject: {fileID: 3638259414973397309, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 831028917}
-    - targetCorrespondingSourceObject: {fileID: 3638259414973397309, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 127538258}
     - targetCorrespondingSourceObject: {fileID: 26455501359851401, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1816842682}
-    - targetCorrespondingSourceObject: {fileID: 26455501359851401, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1816842688}
     - targetCorrespondingSourceObject: {fileID: 4913750295920689471, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
@@ -3923,42 +2861,22 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 402184416}
-    - targetCorrespondingSourceObject: {fileID: 8864339228665556590, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 898255454}
     - targetCorrespondingSourceObject: {fileID: 7163324711924232849, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2095156717}
-    - targetCorrespondingSourceObject: {fileID: 7163324711924232849, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2095156723}
     - targetCorrespondingSourceObject: {fileID: 4515835980697376956, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 896457178}
-    - targetCorrespondingSourceObject: {fileID: 4515835980697376956, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1322356058}
     - targetCorrespondingSourceObject: {fileID: 3238684713210647144, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 572063169}
-    - targetCorrespondingSourceObject: {fileID: 3238684713210647144, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1824485246}
     - targetCorrespondingSourceObject: {fileID: 6290668375342716511, guid: 17fc73b0b7b32464f85c61b151a817f0,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1417142457}
-    - targetCorrespondingSourceObject: {fileID: 6290668375342716511, guid: 17fc73b0b7b32464f85c61b151a817f0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1841386144}
   m_SourcePrefab: {fileID: 100100000, guid: 17fc73b0b7b32464f85c61b151a817f0, type: 3}
 --- !u!1 &1785715041 stripped
 GameObject:
@@ -4050,6 +2968,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1785715040}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1785715056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6731895755138800982, guid: 17fc73b0b7b32464f85c61b151a817f0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1785715040}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785715057 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4486242156489754038, guid: 17fc73b0b7b32464f85c61b151a817f0,
@@ -4074,10 +2998,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapZone: {fileID: 1057072886}
+  snapZone: {fileID: 0}
   positionSnapDistance: 0.5
   rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
+  snapSource: {fileID: 0}
 --- !u!114 &1785715060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4091,7 +3015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 1785715066}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -4121,70 +3045,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1785715066}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1881315760}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1785715066}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1881315760}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1711092072}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -4193,36 +3057,10 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1785715068}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1785715068}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
@@ -4249,7 +3087,7 @@ MonoBehaviour:
   singleHandOnly: 0
   allowHeldSwapping: 1
   instantGrab: 0
-  useGentleGrab: 0
+  useGentleGrab: 1
   heldNoFriction: 1
   maintainGrabOffset: 0
   ignoreWeight: 0
@@ -4257,7 +3095,7 @@ MonoBehaviour:
   throwPower: 1
   jointBreakForce: 3500
   showAdvancedSettings: 1
-  makeChildrenGrabbable: 0
+  makeChildrenGrabbable: 1
   grabPriorityWeight: 1
   ignoreReleaseTime: 0.5
   maxHeldVelocity: 10
@@ -4350,38 +3188,20 @@ MonoBehaviour:
   heart: {fileID: 1785715041}
   fractionHeart: {fileID: 536489357}
   unitHeart: {fileID: 18904554}
---- !u!54 &1785715066 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 2076649095497411841, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1785715068 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 105449675984458669, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1801971174 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8394495843825258907, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1816842682
+--- !u!114 &1785715070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715049}
+  m_GameObject: {fileID: 1785715056}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 1816842684}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -4411,70 +3231,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1816842684}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 956565601}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1816842684}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 956565601}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1816842688}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -4483,112 +3243,77 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1816842686}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1816842686}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!54 &1816842684 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1901609552826736688, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1816842686 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8731653280908905350, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1816842688
+--- !u!114 &1816842682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785715049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
+  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  snapZone: {fileID: 889974714}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
---- !u!54 &1824485242 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 3264964856836866257, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1824485244 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3298805288135691523, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1824485246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 245424878}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
---- !u!114 &1841386144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 1365531132}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
+  ignoreMe: 0
+  body: {fileID: 0}
+  hightlightMaterial: {fileID: 0}
+  isGrabbable: 1
+  CopySettings: {fileID: 0}
+  grabType: 0
+  handType: 0
+  singleHandOnly: 0
+  allowHeldSwapping: 1
+  instantGrab: 0
+  useGentleGrab: 0
+  heldNoFriction: 1
+  maintainGrabOffset: 0
+  ignoreWeight: 0
+  parentOnGrab: 1
+  throwPower: 1
+  jointBreakForce: 3500
+  showAdvancedSettings: 1
+  makeChildrenGrabbable: 1
+  grabPriorityWeight: 1
+  ignoreReleaseTime: 0.5
+  maxHeldVelocity: 10
+  heldPositionOffset: {x: 0, y: 0, z: 0}
+  heldRotationOffset: {x: 0, y: 0, z: 0}
+  customGrabJoint: {fileID: 0}
+  jointedBodies: []
+  heldIgnoreColliders: []
+  pullApartBreakOnly: 1
+  showEvents: 1
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onSqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnsqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onHighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnhighlight:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJointBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  lockHandOnGrab: 0
 --- !u!114 &1880770617 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1110449949, guid: 427ea5affd547e74bb017ea2ca7f2e89,
@@ -4604,12 +3329,6 @@ MonoBehaviour:
 --- !u!4 &1881315759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8399556566779155604, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1881315760 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4172883312089926070, guid: c22829f0b457aad45a6b2c4295c35b65,
     type: 3}
   m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
@@ -4796,7 +3515,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 263603233}
+    m_TransformParent: {fileID: 302807360523341363}
     m_Modifications:
     - target: {fileID: 2063139194714360515, guid: a04551917425b7643a2fb7a5bc074de9,
         type: 3}
@@ -4958,25 +3677,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever Stepper
       objectReference: {fileID: 0}
-    - target: {fileID: 2063139195986095538, guid: a04551917425b7643a2fb7a5bc074de9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2063139195986095539, guid: a04551917425b7643a2fb7a5bc074de9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.621
+      value: -0.627
       objectReference: {fileID: 0}
     - target: {fileID: 2063139195986095539, guid: a04551917425b7643a2fb7a5bc074de9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.121
+      value: 0.12099999
       objectReference: {fileID: 0}
     - target: {fileID: 2063139195986095539, guid: a04551917425b7643a2fb7a5bc074de9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.231
+      value: -0.255
       objectReference: {fileID: 0}
     - target: {fileID: 2063139195986095539, guid: a04551917425b7643a2fb7a5bc074de9,
         type: 3}
@@ -5026,12 +3740,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a04551917425b7643a2fb7a5bc074de9, type: 3}
---- !u!23 &1917132245 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1538009260653238040, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1919670571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5046,7 +3754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ignoreMe: 0
   body: {fileID: 501856064}
-  hightlightMaterial: {fileID: 0}
+  hightlightMaterial: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef, type: 2}
   isGrabbable: 1
   CopySettings: {fileID: 0}
   grabType: 0
@@ -5127,18 +3835,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1919670572}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -5197,21 +3893,9 @@ MonoBehaviour:
   positionSnapDistance: 0.2
   rotationSnapAngle: 20
   snapSource: {fileID: 173312584}
---- !u!23 &1938436220 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5594430625829233703, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1944761100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2666338163596787086, guid: c22829f0b457aad45a6b2c4295c35b65,
-    type: 3}
-  m_PrefabInstance: {fileID: 18904553}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &1944761101 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2681310778843008088, guid: c22829f0b457aad45a6b2c4295c35b65,
     type: 3}
   m_PrefabInstance: {fileID: 18904553}
   m_PrefabAsset: {fileID: 0}
@@ -5290,7 +3974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreMe: 0
-  body: {fileID: 2095156719}
+  body: {fileID: 0}
   hightlightMaterial: {fileID: 0}
   isGrabbable: 1
   CopySettings: {fileID: 0}
@@ -5320,70 +4004,10 @@ MonoBehaviour:
   showEvents: 1
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2095156719}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1591745534}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2095156719}
-        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
-        m_MethodName: set_isKinematic
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1591745534}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2095156723}
-        m_TargetAssemblyTypeName: PartsConnector, Assembly-CSharp
-        m_MethodName: SnapObjectWhenDropped
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onSqueeze:
     m_PersistentCalls:
       m_Calls: []
@@ -5392,80 +4016,498 @@ MonoBehaviour:
       m_Calls: []
   onHighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2095156721}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: f91397bb21aa74d41be3022cfb5d40ef,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onUnhighlight:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2095156721}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 1c4de62afa0257a4cb425e799f55944e,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnJointBreak:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
---- !u!54 &2095156719 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 3884266230623992830, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &2095156721 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2119035902727336726, guid: 17fc73b0b7b32464f85c61b151a817f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1785715040}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2095156723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785715045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 420c191cff9a36e4186b8640db17395a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snapZone: {fileID: 1427385783}
-  positionSnapDistance: 0.5
-  rotationSnapAngle: 10
-  snapSource: {fileID: 173312584}
 --- !u!4 &2121229881 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7012487455046184295, guid: 45753d24446abeb47b7f5efc4c52daba,
     type: 3}
   m_PrefabInstance: {fileID: 536489356}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &302807359873772998
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302807359873773002}
+  m_Mesh: {fileID: -1230348072220387305, guid: c52c4e4029c7cc547a033db8b08dd4eb, type: 3}
+--- !u!4 &302807359873773000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302807359873773002}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 302807360523341363}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &302807359873773001
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302807359873773002}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a835ac24fc2cad9439407885825362d2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &302807359873773002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302807359873773000}
+  - component: {fileID: 302807359873772998}
+  - component: {fileID: 302807359873773001}
+  - component: {fileID: 302807359873773003}
+  m_Layer: 0
+  m_Name: DeskSurface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &302807359873773003
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302807359873773002}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.5, y: 0.030000001, z: 0.8}
+  m_Center: {x: 0, y: 0.005689655, z: 0}
+--- !u!215 &302807360414724974
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302807360414724976}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 2
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 20, y: 20, z: 20}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 0.62
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 8900000, guid: 02087f394db194f44b28f48e3a72c70b,
+    type: 3}
+--- !u!1 &302807360414724976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302807360414724977}
+  - component: {fileID: 302807360414724974}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302807360414724977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302807360414724976}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.054, y: 0.80784667, z: 0.605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 690001815326416828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302807360523341362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302807360523341363}
+  m_Layer: 0
+  m_Name: Desk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302807360523341363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302807360523341362}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 302807359873773000}
+  - {fileID: 3475491308536601728}
+  - {fileID: 438273843}
+  m_Father: {fileID: 690001815326416828}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &690001815326416828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702516612114426611}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 302807360414724977}
+  - {fileID: 302807360523341363}
+  m_Father: {fileID: 1456155113289016202}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &702516612114426611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 690001815326416828}
+  m_Layer: 0
+  m_Name: SmallRoomEnvironment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1456155113289016202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4669664200583206323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 690001815326416828}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1969387360057170900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969387360057170902}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!108 &1969387360057170901
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969387360057170902}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 1
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &1969387360057170902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969387360057170900}
+  - component: {fileID: 1969387360057170901}
+  - component: {fileID: 587035766}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &3473009069320874137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3475491308536601728}
+  - component: {fileID: 4184253678528729450}
+  - component: {fileID: 5178699914899068965}
+  - component: {fileID: 6686134146662501114}
+  m_Layer: 0
+  m_Name: DeskShadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3475491308536601728
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3473009069320874137}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.78, z: 0.279}
+  m_LocalScale: {x: 1.14, y: 1.14, z: 1.14}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 302807360523341363}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4184253678528729450
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3473009069320874137}
+  m_Mesh: {fileID: 5835961301784902498, guid: bb5c416ca94f7a34fbd14f26fa5a38e6, type: 3}
+--- !u!1 &4669664200583206323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456155113289016202}
+  m_Layer: 0
+  m_Name: SmallRoomEnvironment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &5178699914899068965
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3473009069320874137}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b8b2855e2f2d82f47a440a0f16dbfd71, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6686134146662501114
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3473009069320874137}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5835961301784902498, guid: bb5c416ca94f7a34fbd14f26fa5a38e6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1969387360057170900}
   - {fileID: 431888206}
-  - {fileID: 587035764}
+  - {fileID: 1456155113289016202}
   - {fileID: 536489356}
   - {fileID: 18904553}
   - {fileID: 1785715040}
